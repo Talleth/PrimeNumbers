@@ -8,6 +8,8 @@ namespace PrimeNumbers
 {
     public class PrimeNumbers
     {
+        // Worse Time Complexity O(sqrt(n))
+        // Average Time Complexity O(sqrt(n) / log n)
         public static bool IsPrimeNumber(int number)
         {
             bool result = true;
@@ -24,6 +26,7 @@ namespace PrimeNumbers
             return result;
         }
 
+        // Time Complexity O(sqrt(n) * n)
         public static List<int> CalculateFromRange(int start, int end)
         {
             List<int> result = new List<int>();
