@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PrimeNumbers
 {
-    public class PrimeNumbers
+    public class PrimeNumbersBasic
     {
         // Worse Time Complexity O(sqrt(n))
         // Average Time Complexity O(sqrt(n) / log n)
@@ -36,7 +36,7 @@ namespace PrimeNumbers
 
             for (int i=start; i<=end; i++)
             {
-                if (PrimeNumbers.IsPrimeNumber(i))
+                if (PrimeNumbersBasic.IsPrimeNumber(i))
                     result.Add(i);
             }
 

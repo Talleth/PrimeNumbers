@@ -43,7 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PrimeNumbers.cs" />
+    <Compile Include="PrimeNumbersBasic.cs" />
+    <Compile Include="PrimeNumbersSieve.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
