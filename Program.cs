@@ -37,6 +37,13 @@ namespace PrimeNumbers
             Console.WriteLine("1 - 120");
             Console.WriteLine(string.Join(",", PrimeNumbersSieve.CalculateFromRange(1, 120)));
             Console.WriteLine();
+
+            // Example 2 - Sieve:
+            // From 10 - 50
+            // Result: 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47
+            Console.WriteLine("10 - 50");
+            Console.WriteLine(string.Join(",", PrimeNumbersSieve.CalculateFromRange(10, 50)));
+            Console.WriteLine();
         }
     }
 }

@@ -12,16 +12,12 @@ namespace PrimeNumbers
         {
             List<int> result = new List<int>();
 
-            // Nothing less than 2 is prime
-            if (start <= 1)
-                start = 2;
-
             // Initialize list to sieve
-            for (int i = start; i <= end; i++)
+            for (int i = 2; i <= end; i++)
                 result.Add(i);
 
             // Loop through every int again and start sieving
-            for (int i=start; i<=end; i++)
+            for (int i=2; i<=end; i++)
             {
                 if (result.Contains(i))
                 {
@@ -32,7 +28,7 @@ namespace PrimeNumbers
                 }
             }
 
-            return result;
+            return result.Where(x => x >= start).ToList();
         }
     }
 }
